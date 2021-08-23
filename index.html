@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+
+        <title>
+            Melanie Kahl's Portfolio
+        </title>
+    </head>
+    <body>
+        <header>
+            <nav class="topnav" id="portfolioTopnav">
+                <a href="#aboutsection">About</a>
+                <a href="#skillsection">Skills</a>
+                <a href="#accomplishmentsection">Accomplishments</a>
+                <a href="#contactsection">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+            </nav>
+            <br> <br>
+            <h1>Melanie Kahl</h1>
+        </header>
+
+        <main>
+
+        <!--About Section -->
+
+        <div id="aboutsection">
+            <figure>
+                <a href="https://www.linkedin.com/in/melanie-kahl-155307141/" target="_blank">
+                <img src="me.jpg" width="200" height="276.86" alt="a picture of Melanie Kahl"/></a>
+            </figure>
+            
+
+            <h2 id="about" class="heading uppercase">About</h2>
+            <p>I am a Doctoral Candidate at the <strong>Queensland University of Technology</strong> in Brisbane, Australia
+                and the <strong>Friedrich-Alexander-University Erlangen-Nuremberg</strong> in Germany undertaking a joint PhD
+                in the area of bioengineering. <br>My research is focussed on <em>opto-mechatronic screening solutions 
+                for 3D cell cultures</em>.
+               <br>
+               <br>
+            </p>
+
+            <!--Skill Section -->
+
+            <h3 id="skillsection">Skills</h3>
+            <h4>Research Skills</h4>
+            <ul class="list">
+                <li>Fluorescence Microscopy</li>
+                <li>3D Cell Culture</li>
+                <li>Hydrogels</li>
+                <li>Linear-motion Technology</li>
+            </ul>
+            <h4>Interpersonal Skills</h4>
+            <ul class="list">
+                <li>Independent Working</li>
+                <li>Teamwork</li>
+                <li>Planning and Scheduling</li>
+            </ul>
+            <h4>Technical Skills</h4>
+            <ul class="list">
+                <li>Programmming languages (Python, Matlab)</li>
+                <li>Common operating systens (MS Office)</li>
+                <li>Project Management</li>
+            </ul>
+        </div>
+
+        <!--Accomplishment Section -->
+
+        <div id="accomplishmentsection">
+            <h2>Accomplishments</h2>
+            <p>
+                <table>
+                    <tr>
+                        <th scope="col">Publications</th>
+                        <th scope="col">Awards</th>
+                        <th scope="col">Presentations</th>
+                    </tr>
+                    <tr>
+                        <td>Ultra-low-cost 3D bioprinting: modification and application of an off-the-shelf desktop 3D-printer for biofabrication
+                            <br>M Kahl, M Gertig, P Hoyer, O Friedrich, DF Gilbert
+                            <br><em>Frontiers in bioengineering and biotechnology 7, 184</em></td>
+                        <td>QUT/FAU Scholarship</td>
+                        <td>Postgraduate Symposium
+                            <br>School of Biomedical Sciences (Faculaty of Health, QUT)
+                            <br>September 2019, Brisbane, Australia
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>An open source technology platform to manufacture hydrogel-based 3D culture models in an automated and standardized fashion
+                            <br>S Eggert, M Kahl, R Kent, N Bock, C Meinert, DW Hutmacher
+                            <br><em>J. Vis. Exp. 61261</em> </td>
+                        <td>QUT Tuition Fee Scholarship</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>An open-source technology platform to increase reproducibility and enable high-throughput production of tailorable gelatin methacryloyl (GelMA)-based hydrogels
+                            <br>S Eggert, M Kahl, N Bock, C Meinert, O Friedrich, DW Hutmacher
+                            <br><em>Materials & Design 204, 109619</em></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <h3>Coding Examples</h3>
+                <a href="quiz.html" id="quizbutton">Take the Portfolio Quiz!</a>
+
+            </p>
+        </div>
+
+        <div>
+            <h3>More Information</h3>
+            <button class="accordion">First Section</button>
+
+            <div class="panel">
+
+            <p> Your text will be displayed here. Enter relevant content...</p>
+
+            </div>
+
+            <button class="accordion">Second Section</button>
+
+            <div class="panel">
+
+            <p> Your text will be displayed here. Enter relevant content...</p>
+
+            </div>
+
+            <button class="accordion">Third section</button>
+
+            <div class="panel">
+
+            <p>Your text will be displayed here. Enter relevant content...</p>
+
+            </div>
+        </div>
+
+        <!--Contact Section -->
+
+        <div id="contactsection">
+            <h2 class="contactform">Contact</h2>
+            <a href="https://www.linkedin.com/in/melanie-kahl-155307141/" target="_blank"> LinkedIn</a>
+            <br>
+            <br>
+            <a href="https://scholar.google.de/citations?hl=de&user=l-ubkq0AAAAJ" target="_blank"> Google Scholar</a>
+            <br>
+            <br>
+
+            <form action="">
+                <label for="name">*Name:</label>
+                <br>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <br>
+                <label for="email">*Email:</label>
+                <br>
+                <input type="text" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <br>
+                <br>
+                <label for="mobile">Mobile (optional)</label>
+                <br>
+                <input type="tel" name="mobile" id="mobile" pattern="[0-9] {8,16}">
+                <br>
+                <br>
+                <label for="message">*Leave your message below:</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <br>
+            <br>
+        </div>
+    </main> 
+    <script src="./nav.js"></script>
+    </body>
+</html>
